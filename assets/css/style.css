@@ -5,10 +5,15 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
-    background-color: aqua;
-    width: 1000px;
+    width: auto;
+    display: flex;
 }
 .container_social{
     background-color: rgb(226, 226, 226);
@@ -43,7 +48,7 @@ body{
 }
 .area_localização{
     background-color:  rgb(207, 207, 207);
-    margin: 20px 0px;
+    margin: 40px 0px;
     padding: 15px 0px;
 }
 .area_localização ul{
@@ -74,6 +79,75 @@ body{
 }
 .area_botao_email a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     font-size: 16px;
+}
+
+
+
+.container_info {
+    background-color: rgb(226, 226, 226);
+    margin-right: 30px;
+    border-radius: 10px;
+    width: 690px;
+}
+
+.area_sobremim{
+}
+.area_sobremim .titulo {
+    margin: 20px 20px 0px 20px;
+}
+.area_sobremim .getway {
+    background-color:  rgb(88, 133, 230);
+    width: 40px;
+    height: 4px;
+    margin: 5px 0px 20px 20px;
+}
+.area_sobremim .texto {
+    margin:  0px 20px;
+}
+
+.area_menu ul {    
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    margin-top: 30px;
+}
+.area_menu li {
+    padding: 5px 8px;
+    margin: 6px;
+    border-radius: 20px;
+}
+.area_menu .active {
+    background-color: rgb(207, 207, 207);
+}
+.area_menu li:hover{
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+}
+
+.conhecimento {
+    margin: 20px;
+    height: 290px;
+    display: none;
+}
+.habilidades .area_icones img{
+    width: 50px;
+    height: 50px;
+}
+.area_fonte {
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.area_fonte ul {
+    margin-left: 17px;
+    margin-top: 10px;
+}
+.area_fonte li {
+    margin: 3px 0px;
+}
+.area_fonte .info{
+    font-size: 11px;
+    margin-top: 5px;
+    margin-left: 15px;
 }
