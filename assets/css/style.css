@@ -24,6 +24,11 @@ article {
     border-radius: 10px;
     padding: 20px;
 }
+.area_botoes,
+.area_menu,
+button{
+    user-select:none;
+}
 
 /*área esquerda/social/left*/
 .container_social{
@@ -50,16 +55,22 @@ article {
     font-size: 24px;
     font-weight: 500;
 }
+
+/*area para contato*/
 .area_botoes {
     width: 200px;
     margin: auto;
-    margin-top: 30px;
-    text-align: center;
+    margin-top: 20px;
 }
-/*area para contato*/
-.area_botoes button{
-    padding: 5px 10px;
-    margin: 5px 2px 5px 2px;
+.area_botoes ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+.area_botoes li{
+    padding: 3px 10px;
+    margin: 5px 2px;
 
     border: none;
     border-radius: 20px;
@@ -68,7 +79,7 @@ article {
     color: #FFF;
 }
 .area_contato{
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 15px 0px;
 
     text-align: center;
@@ -91,7 +102,7 @@ article {
 /*botão email*/
 .area_botao_email{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .area_botao_email button {
     padding: 10px 15px;
