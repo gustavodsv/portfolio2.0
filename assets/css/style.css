@@ -56,6 +56,7 @@ article {
     margin-top: 30px;
     text-align: center;
 }
+/*area para contato*/
 .area_botoes button{
     padding: 5px 10px;
     margin: 5px 2px 5px 2px;
@@ -66,27 +67,28 @@ article {
     background-color: #016795;
     color: #FFF;
 }
-.area_localização{
+.area_contato{
     margin-top: 30px;
     padding: 15px 0px;
 
     text-align: center;
     background-color: rgb(207, 207, 207);
 }
-.area_localização ul {
+.area_contato ul {
     list-style: none;
 }
-.area_localização li {
+.area_contato li {
     padding: 5px 0px;
 }
-.area_localização li a{
+.area_contato li a{
     color: #000;
     text-decoration: none;
 }
-.area_localização li a:hover{
+.area_contato li a:hover{
     color: #000;
     text-decoration: underline;
 }
+/*botão email*/
 .area_botao_email{
     text-align: center;
     margin-top: 30px;
@@ -159,18 +161,18 @@ article {
 .area_habilidades {
     padding: 20px;
 }
-.area_fonte {
-    margin-top: 10px ;
-    display: none;
+
+#area_fonte{
+    margin-top: 10px;
 }
-.area_fonte ul {
+#area_fonte ul {
     margin-left: 17px;
     margin-top: 10px;
 }
-.area_fonte li {
+#area_fonte li {
     margin: 3px 0px;
 }
-.area_fonte .info{
+#area_fonte .info{
     font-size: 11px;
     margin-top: 5px;
     margin-left: 15px;
@@ -187,40 +189,44 @@ article {
 }
 
 /*projetos*/
-.projetos {
+#projetos {
     border-radius: 10px;
     margin-top: 10px;
-    display: block;
 }
-.projetos .widget {
+#projetos .widget {
     background-color: #FFF;
     padding: 20px;
     border-radius: 10px;
     margin-top: 15px;
 }
-.projetos .widget .titulo {
+#projetos .widget .titulo {
     margin-bottom: 20px;
 }
-.projetos .widget .area_projeto .imagem {
+#projetos .widget .area_projeto .imagem {
     width: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.projetos .widget .imagem img {
+#projetos .widget .imagem img {
     width: 100%;
     text-align: center;
     box-shadow: 0px 0px 10px #999;
     border-radius: 5px;
 }
-.projetos .widget .info {
+#projetos .widget .info {
     margin-top: 10px
 }
-.projetos .widget .info a{
+#projetos .widget .info a{
     color: rgb(54, 54, 252);
     text-decoration: none;
 }
-.projetos .widget .info a:hover{
+#projetos .widget .info a:hover{
     color: rgb(110, 110, 255);
     text-decoration: underline;
+}
+
+/*class JS, ocultar objetos*/
+.oculto {
+    display: none;
 }

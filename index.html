@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
     <title>Portfólio's Gustavo</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
                 <button>GitHub</button>
                 <button>Git</button>
             </div>
-            <div class="area_localização">
+            <div class="area_contato">
                 <ul>
                     <li>Brasília, DF, Brasil</li>
                     <li><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></li>
@@ -50,13 +51,13 @@
             <article class="area_menu">
                 <nav>
                     <ul>
-                        <li class="active">Projetos</li>
-                        <li>Fontes</li>
+                        <li id="btn_1" onclick="btn_1()" class="active">Projetos</li>
+                        <li id="btn_2" onclick="btn_2(this)">Mais</li>
                     </ul>
                 </nav>
             </article>
             
-            <article class="area_fonte">
+            <article id="area_fonte" class="oculto">
                 <h3>Fonte de Conhecimento</h3>
                     <ul>  
                         <li>Universidade Estácio de Sá (Algoritmo, Desenvolvimento Web, C++);</li>
@@ -73,9 +74,8 @@
                         </div>
                 </div>
             </article>
-
             
-            <div class="projetos">
+            <div id="projetos">
                 <div class="widget">
                     <div class="titulo"><h2>Clone - Awax</h2></div>
 
@@ -118,6 +118,6 @@
         </div>
         
     </div>
-
+    
 </body>
 </html>
