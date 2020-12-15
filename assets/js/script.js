@@ -23,6 +23,8 @@ function btn_1(elemento){
     document.querySelector("#projetos").classList.remove("oculto");
     /*ocultar fontes*/
     document.querySelector("#area_fonte").classList.add("oculto");
+    /*ocultar mais projetos*/
+    document.querySelector(`#mais_projetos`).classList.add(`oculto`);
 
 }
 function btn_2(elemento) {
@@ -34,4 +36,6 @@ function btn_2(elemento) {
     document.querySelector("#projetos").classList.add("oculto");
     /*ocultar fontes*/
     document.querySelector("#area_fonte").classList.add("oculto");
+    /*mostrar mais projetos*/
+    document.querySelector(`#mais_projetos`).classList.remove(`oculto`);
 }
