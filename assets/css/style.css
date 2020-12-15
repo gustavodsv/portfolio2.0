@@ -52,6 +52,7 @@ body{
 .area_botoes {
     margin-top: 20px;
     padding: 10px;
+    user-select:none;
 }
 .area_botoes ul {
     display: flex;
@@ -66,6 +67,12 @@ body{
     border-radius: 20px;
     background-color: #1c1c1c;
     color: #FFF;
+
+    cursor: pointer;
+}
+.area_botoes li:hover{
+    background-color: #3d3d3d;
+    transition: 0.5s all;
 }
 
 /*área contato*/
@@ -142,10 +149,12 @@ article {
 .area_sobremim .widget {
     width: 40px;
     height: 4px;
-    margin: 5px 0px 20px 0px;
+    margin: 5px 0px 10px 0px;
     background-color: rgb(31, 94, 228);
 }
-
+.area_sobremim .texto p{
+    padding-top: 10px;
+}
 /*fontes*/
 #area_fonte{
     margin-top: 20px;
@@ -224,14 +233,15 @@ article {
     border-radius: 20px;
 }
 .area_menu li.active{
-    background-color:  #016795;
+    background-color:  #1c1c1c;
     color: #FFF;
 }
 
 .area_menu li:hover{
-    background-color: #016795;
+    background-color: #868686;
     color: #FFF;
     cursor: pointer;
+    transition: 0.8s all;
 }
 
 
