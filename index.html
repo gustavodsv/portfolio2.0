@@ -43,42 +43,50 @@
             </div>
         </section>
 
+
+
         <div class="container_info">
-            <article class="area_sobremim">
+            <section class="area_sobremim">
                 <div class="titulo"><h1>Sobre Mim</h1></div>
                 <div class="widget"></div>
                 <div class="texto">
                     <p>Meu nome é Gustavo, tenho 22 anos, sou de Brasília/DF, curso Análise e Desenvolvimento de Sistemas(ADS) na Universidade Estácio de Sá.</p>
                     <p>Atualmente estou desenvolvendo meu conhecimento na área de Desenvolvimento Web.</p>
                 </div>
-            </article>
 
-            <article class="area_menu">
-                <nav>
+                <div id="area_fonte" class="ocudlto">
+                    <h3>Fonte de Conhecimento</h3>
+                        <ul>  
+                            <li>Universidade Estácio de Sá (Algoritmo, Desenvolvimento Web, C++);</li>
+                            <li>Curso em video, com Professor Gustavo Guanabara (HTML 5, CSS 3, JS*);</li>
+                            <li>B7Web, com o Professor Bonieky Lacerda (HTML 5, CSS 3, JS*, Algoritmo). </li>
+                        </ul>
+                    <p class="info">*Estou aprendendo</p>
+
+                    <div class="habilidades">
+                        <h4>Habilidades</h4>
+                            <div class="area_icones">
+                                <img src="assets/images/habilidades/html.png" alt="">
+                                <img src="assets/images/habilidades/css.png" alt="">
+                                <img src="assets/images/habilidades/git.png" alt="">
+                            </div>
+                    </div>
+                </div>
+                <div id="btn_sobremim">
+                    <div class="btn_mais">
+                        <img src="assets/images/icons/down-arrow.png" alt="" title="mais">
+                    </div>
+                </div>
+            </section>
+
+            <nav class="area_menu">
                     <ul>
                         <li id="btn_1" onclick="btn_1()" class="active">Projetos</li>
                         <li id="btn_2" onclick="btn_2(this)">Mais</li>
                     </ul>
-                </nav>
-            </article>
+            </nav>
             
-            <article id="area_fonte" class="oculto">
-                <h3>Fonte de Conhecimento</h3>
-                    <ul>  
-                        <li>Universidade Estácio de Sá (Algoritmo, Desenvolvimento Web, C++);</li>
-                        <li>Curso em video: com Professor Gustavo Guanabara (HTML 5, CSS 3, JS*);</li>
-                        <li>B7Web: com o Professor Bonieky Lacerda (HTML 5, CSS 3, JS*, Algoritmo). </li>
-                    </ul>
-                <p class="info">*Estou aprendendo</p>
-                <div class="habilidades">
-                    <h4>Habilidades</h4>
-                        <div class="area_icones">
-                            <img src="assets/images/habilidades/html.png" alt="">
-                            <img src="assets/images/habilidades/css.png" alt="">
-                            <img src="assets/images/habilidades/git.png" alt="">
-                        </div>
-                </div>
-            </article>
+            
             
             <div id="projetos">
                 <div class="widget">

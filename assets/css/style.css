@@ -16,12 +16,7 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0px 24px;
-    user-select:none;
-}
-article {
-    background-color: #FFF;
-    border-radius: 10px;
-    padding: 20px;
+    /*user-select:none;*/
 }
 
 
@@ -106,7 +101,6 @@ article {
 
     border: none;
     border-radius: 20px;
-
     background-color: rgb(12, 79, 224);
 }
 .area_botao_email a {
@@ -122,7 +116,11 @@ article {
 
 
 
-
+article {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+}
 
 
 /*area informações/right/direita*/
@@ -132,9 +130,12 @@ article {
     border-radius: 10px;
     background-color: #1B2431;
 }
+
 /*sobre mim*/
 .area_sobremim {
-    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
 }
 
 /*widget traço azul*/
@@ -145,10 +146,69 @@ article {
     background-color: rgb(31, 94, 228);
 }
 
+/*fontes*/
+#area_fonte{
+    margin-top: 20px;
+}
+#area_fonte ul {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+#area_fonte li {
+    margin: 5px 0px;
+}
+#area_fonte .info{
+    font-size: 11px;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #c1c1c1;
+}
+
+/*habilidades*/
+.habilidades {
+    margin-top: 20px;
+}
+.habilidades .area_icones {
+    margin-top: 18px;
+}
+.habilidades .area_icones img{
+    width: 40px;
+}
+/*btn mais sobre mim*/
+#btn_sobremim{
+    width: 100%;
+    height: 20px;
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+.btn_mais{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 13px;
+    background-color: rgb(31, 94, 228);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+#btn_sobremim img{
+    width: 10px;
+
+}
 /*menu*/
 .area_menu {
     padding: 20px;
     margin-top: 10px;
+
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
 }
 .area_menu ul {    
     display: flex;
@@ -173,36 +233,6 @@ article {
     cursor: pointer;
 }
 
-/*habilidades*/
-.area_habilidades {
-    padding: 20px;
-}
-
-#area_fonte{
-    margin-top: 10px;
-}
-#area_fonte ul {
-    margin-left: 17px;
-    margin-top: 10px;
-}
-#area_fonte li {
-    margin: 3px 0px;
-}
-#area_fonte .info{
-    font-size: 11px;
-    margin-top: 5px;
-    margin-left: 15px;
-}
-.habilidades {
-    margin-top: 20px;
-}
-.habilidades .area_icones {
-    margin-top: 5px;
-}
-.habilidades .area_icones img{
-    width: 40px;
-    height: 40px;
-}
 
 /*projetos*/
 #projetos {
