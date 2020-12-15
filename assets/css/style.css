@@ -8,32 +8,27 @@ body{
     background-color:#1B2431;
 }
 .container{
-    max-width: 1070px;
+    width: 1070px;
 
+    display: flex;
     margin: auto;
-    padding: 0px 24px;
 
     margin-top: 50px;
     margin-bottom: 50px;
-    
-    display: flex;    
-    /*align-items: center;*/
+    padding: 0px 24px;
+    user-select:none;
 }
 article {
     background-color: #FFF;
     border-radius: 10px;
     padding: 20px;
 }
-.area_botoes,
-.area_menu,
-button{
-    user-select:none;
-}
+
 
 /*área esquerda/social/left*/
 .container_social{
     width: 300px;
-    height: 580px;
+    height: 545px;
 
     padding: 30px 0px;
     background-color: #FFF;
@@ -49,18 +44,19 @@ button{
 }
 .area_nome {
     margin-top: 15px;
+
     text-align: center;
-}
-.area_nome p{
     font-size: 24px;
     font-weight: 500;
 }
-
-/*area para contato*/
+.area_local{
+    margin-top: 10px;
+    text-align: center;
+}
+/*area botoes*/
 .area_botoes {
-    width: 200px;
-    margin: auto;
     margin-top: 20px;
+    padding: 10px;
 }
 .area_botoes ul {
     display: flex;
@@ -72,31 +68,31 @@ button{
     padding: 3px 10px;
     margin: 5px 2px;
 
-    border: none;
     border-radius: 20px;
-
-    background-color: #016795;
+    background-color: #1c1c1c;
     color: #FFF;
 }
+
+/*área contato*/
 .area_contato{
     margin-top: 20px;
-    padding: 15px 0px;
+    padding: 5px 0px;
 
     text-align: center;
-    background-color: #BA6;
+    background-color: #FFF;
 }
 .area_contato ul {
     list-style: none;
 }
 .area_contato li {
     padding: 5px 0px;
+    color: #000;
 }
 .area_contato li a{
-    color: #000;
     text-decoration: none;
+    color: #000;
 }
 .area_contato li a:hover{
-    color: #000;
     text-decoration: underline;
 }
 /*botão email*/
@@ -119,6 +115,15 @@ button{
     font-size: 15px;
 }
 /*end*/
+
+
+
+
+
+
+
+
+
 
 /*area informações/right/direita*/
 .container_info {
