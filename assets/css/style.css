@@ -8,32 +8,22 @@ body{
     background-color:#1B2431;
 }
 .container{
-    max-width: 1070px;
+    width: 1070px;
 
+    display: flex;
     margin: auto;
-    padding: 0px 24px;
 
     margin-top: 50px;
     margin-bottom: 50px;
-    
-    display: flex;    
-    /*align-items: center;*/
+    padding: 0px 24px;
+    /*user-select:none;*/
 }
-article {
-    background-color: #FFF;
-    border-radius: 10px;
-    padding: 20px;
-}
-.area_botoes,
-.area_menu,
-button{
-    user-select:none;
-}
+
 
 /*área esquerda/social/left*/
 .container_social{
     width: 300px;
-    height: 580px;
+    height: 545px;
 
     padding: 30px 0px;
     background-color: #FFF;
@@ -49,18 +39,20 @@ button{
 }
 .area_nome {
     margin-top: 15px;
+
     text-align: center;
-}
-.area_nome p{
     font-size: 24px;
     font-weight: 500;
 }
-
-/*area para contato*/
+.area_local{
+    margin-top: 10px;
+    text-align: center;
+}
+/*area botoes*/
 .area_botoes {
-    width: 200px;
-    margin: auto;
     margin-top: 20px;
+    padding: 10px;
+    user-select:none;
 }
 .area_botoes ul {
     display: flex;
@@ -72,31 +64,37 @@ button{
     padding: 3px 10px;
     margin: 5px 2px;
 
-    border: none;
     border-radius: 20px;
-
-    background-color: #016795;
+    background-color: #1c1c1c;
     color: #FFF;
+
+    cursor: pointer;
 }
+.area_botoes li:hover{
+    background-color: #3d3d3d;
+    transition: 0.5s all;
+}
+
+/*área contato*/
 .area_contato{
     margin-top: 20px;
-    padding: 15px 0px;
+    padding: 5px 0px;
 
     text-align: center;
-    background-color: #BA6;
+    background-color: #FFF;
 }
 .area_contato ul {
     list-style: none;
 }
 .area_contato li {
     padding: 5px 0px;
+    color: #000;
 }
 .area_contato li a{
-    color: #000;
     text-decoration: none;
+    color: #000;
 }
 .area_contato li a:hover{
-    color: #000;
     text-decoration: underline;
 }
 /*botão email*/
@@ -110,7 +108,6 @@ button{
 
     border: none;
     border-radius: 20px;
-
     background-color: rgb(12, 79, 224);
 }
 .area_botao_email a {
@@ -120,6 +117,10 @@ button{
 }
 /*end*/
 
+
+
+
+
 /*area informações/right/direita*/
 .container_info {
     width: 690px;
@@ -127,23 +128,93 @@ button{
     border-radius: 10px;
     background-color: #1B2431;
 }
+
 /*sobre mim*/
 .area_sobremim {
-    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
 }
 
 /*widget traço azul*/
 .area_sobremim .widget {
     width: 40px;
     height: 4px;
-    margin: 5px 0px 20px 0px;
+    margin: 5px 0px 10px 0px;
     background-color: rgb(31, 94, 228);
 }
+.area_sobremim .texto p{
+    padding-top: 10px;
+}
+/*fontes*/
+#area_fonte{
+    margin-top: 20px;
+}
+#area_fonte ul {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+#area_fonte li {
+    margin: 5px 0px;
+}
+#area_fonte .info{
+    font-size: 11px;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #c1c1c1;
+}
+
+/*habilidades*/
+.habilidades {
+    margin-top: 20px;
+}
+.habilidades .area_icones {
+    margin-top: 18px;
+}
+.habilidades .area_icones img{
+    width: 40px;
+}
+/*btn mais sobre mim*/
+
+#btn_sobremim{
+    width: 100%;
+    height: 20px;
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+.btn_mais{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 13px;
+    background-color: rgb(31, 94, 228);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#btn_sobremim img{
+    width: 10px;
+}
+
+
+
+
 
 /*menu*/
 .area_menu {
     padding: 20px;
     margin-top: 10px;
+
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
 }
 .area_menu ul {    
     display: flex;
@@ -158,83 +229,69 @@ button{
     border-radius: 20px;
 }
 .area_menu li.active{
-    background-color:  #016795;
+    background-color:  #1c1c1c;
     color: #FFF;
 }
 
 .area_menu li:hover{
-    background-color: #016795;
+    background-color: #868686;
     color: #FFF;
     cursor: pointer;
+    transition: 0.8s all;
 }
 
-/*habilidades*/
-.area_habilidades {
-    padding: 20px;
-}
 
-#area_fonte{
-    margin-top: 10px;
-}
-#area_fonte ul {
-    margin-left: 17px;
-    margin-top: 10px;
-}
-#area_fonte li {
-    margin: 3px 0px;
-}
-#area_fonte .info{
-    font-size: 11px;
-    margin-top: 5px;
-    margin-left: 15px;
-}
-.habilidades {
-    margin-top: 20px;
-}
-.habilidades .area_icones {
-    margin-top: 5px;
-}
-.habilidades .area_icones img{
-    width: 40px;
-    height: 40px;
-}
+
+
+
+
+
+
 
 /*projetos*/
 #projetos {
     border-radius: 10px;
     margin-top: 10px;
 }
-#projetos .widget {
+#projetos .widget,
+#mais_projetos .widget {
     background-color: #FFF;
     padding: 20px;
     border-radius: 10px;
     margin-top: 15px;
 }
-#projetos .widget .titulo {
-    margin-bottom: 20px;
-}
-#projetos .widget .area_projeto .imagem {
-    width: 100%;
+#projetos .widget .imagem,
+#mais_projetos .widget .imagem {
+    width: 95%;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 30px;
 }
-#projetos .widget .imagem img {
+#projetos .widget .imagem img,
+#mais_projetos .widget .imagem img{
     width: 100%;
     text-align: center;
     box-shadow: 0px 0px 10px #999;
     border-radius: 5px;
 }
-#projetos .widget .info {
-    margin-top: 10px
+#projetos .widget .info,
+#mais_projetos .widget .info {
+    margin-top: 15px;
+    margin-left: 16px;
 }
-#projetos .widget .info a{
+#projetos .widget .info ul,
+#mais_projetos .widget .info ul {
+    list-style: none;
+}
+#projetos .widget .info a,
+#mais_projetos .widget .info a{
     color: rgb(54, 54, 252);
     text-decoration: none;
 }
-#projetos .widget .info a:hover{
+#projetos .widget .info a:hover
+#mais_projetos .widget .info a:hover{
     color: rgb(110, 110, 255);
     text-decoration: underline;
+    transition: 2s all;
 }
 
 /*class JS, ocultar objetos*/

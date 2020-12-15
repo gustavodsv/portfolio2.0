@@ -9,16 +9,18 @@
     <script src="assets/js/script.js"></script>
 </head>
 <body>
-
-    <div class="container">
+<div class="container">
 
         <section class="container_social">
+
             <div class="area_foto">
                 <img src="assets/images/IMG_20190902_084614_354.jpg" alt="">
             </div>
-            <div class="area_nome">
-                <p>Gustavo Venâncio</p>
-            </div>
+
+            <div class="area_nome">Gustavo Venâncio</div>
+
+            <div class="area_local">Brasília, DF, Brasil</div>
+            
             <div class="area_botoes">
                 <ul>
                     <li>Web Developer</li>
@@ -28,54 +30,61 @@
                     <li>Git</li>
                 </ul>
             </div>
+            
             <div class="area_contato">
                 <ul>
                     <li><a href="https://github.com/gustavodsv" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong></a></li>
                     <li><a href="https://www.linkedin.com/in/gustavodsv/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong></a></li>
-                    <li>Brasília, DF, Brasil</li>
                 </ul>
             </div>
+
             <div class="area_botao_email">
                 <button><a href="mailto:gustavo-dev@hotmail.com">Enviar Email</a></button>
             </div>
         </section>
 
+
+
         <div class="container_info">
-            <article class="area_sobremim">
+            <section class="area_sobremim">
                 <div class="titulo"><h1>Sobre Mim</h1></div>
                 <div class="widget"></div>
                 <div class="texto">
                     <p>Meu nome é Gustavo, tenho 22 anos, sou de Brasília/DF, curso Análise e Desenvolvimento de Sistemas(ADS) na Universidade Estácio de Sá.</p>
                     <p>Atualmente estou desenvolvendo meu conhecimento na área de Desenvolvimento Web.</p>
                 </div>
-            </article>
 
-            <article class="area_menu">
-                <nav>
+                <div id="area_fonte" class="oculto">
+                    <h3>Fonte de Conhecimento</h3>
+                        <ul>  
+                            <li>Universidade Estácio de Sá (Algoritmo, Desenvolvimento Web, C++);</li>
+                            <li>Curso em video, com Professor Gustavo Guanabara (HTML 5, CSS 3, JS*);</li>
+                            <li>B7Web, com o Professor Bonieky Lacerda (HTML 5, CSS 3, JS*, Algoritmo). </li>
+                        </ul>
+                    <p class="info">*Estou aprendendo</p>
+
+                    <div class="habilidades">
+                        <h4>Habilidades</h4>
+                            <div class="area_icones">
+                                <img src="assets/images/habilidades/html.png" alt="">
+                                <img src="assets/images/habilidades/css.png" alt="">
+                                <img src="assets/images/habilidades/git.png" alt="">
+                            </div>
+                    </div>
+                </div>
+                <div id="btn_sobremim" class="oculto" onclick="btn_sobremim(this)">
+                    <div class="btn_mais">
+                        <img src="assets/images/icons/down-arrow.png" alt="" id="btn_img">
+                    </div>
+                </div>
+            </section>
+
+            <nav class="area_menu">
                     <ul>
                         <li id="btn_1" onclick="btn_1()" class="active">Projetos</li>
-                        <li id="btn_2" onclick="btn_2(this)">Mais</li>
+                        <li id="btn_2" onclick="btn_2(this)">Outros</li>
                     </ul>
-                </nav>
-            </article>
-            
-            <article id="area_fonte" class="oculto">
-                <h3>Fonte de Conhecimento</h3>
-                    <ul>  
-                        <li>Universidade Estácio de Sá (Algoritmo, Desenvolvimento Web, C++);</li>
-                        <li>Curso em video: com Professor Gustavo Guanabara (HTML 5, CSS 3, JS*);</li>
-                        <li>B7Web: com o Professor Bonieky Lacerda (HTML 5, CSS 3, JS*, Algoritmo). </li>
-                    </ul>
-                <p class="info">*Estou aprendendo</p>
-                <div class="habilidades">
-                    <h4>Habilidades</h4>
-                        <div class="area_icones">
-                            <img src="assets/images/habilidades/html.png" alt="">
-                            <img src="assets/images/habilidades/css.png" alt="">
-                            <img src="assets/images/habilidades/git.png" alt="">
-                        </div>
-                </div>
-            </article>
+            </nav>            
             
             <div id="projetos">
                 <div class="widget">
@@ -86,8 +95,10 @@
                     </div>
 
                     <div class="info">
-                        Página: <a href="https://gustavodsv.github.io/template-awax/" target="_blank" rel="noopener noreferrer">Clique aqui</a><br>
-                        Código no Github: <a href="https://github.com/gustavodsv/template-awax" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                        <ul>
+                            <li>Página: <a href="https://gustavodsv.github.io/template-awax/" target="_blank" rel="noopener noreferrer">Clique aqui</a></li>
+                            <li>Código no Github: <a href="https://github.com/gustavodsv/template-awax" target="_blank" rel="noopener noreferrer">Clique aqui</a></li> 
+                        </ul>
                     </div>                   
                 </div>
 
@@ -117,9 +128,43 @@
                     </div>                   
                 </div>
             </div>
+
+
+
+
+
+
+
+
+            <div id="mais_projetos" class="oculto">
+                <div class="widget">
+                    <div class="titulo"><h2>Clone - Página Samsung</h2></div>
+
+                    <div class="imagem">
+                        <a href="https://gustavodsv.github.io/template-samsung/" target="_blank" rel="noopener noreferrer"><img src="assets/images/mais/samsung-img.png" alt=""></a>
+                    </div>
+
+                    <div class="info">
+                        Página: <a href="https://gustavodsv.github.io/template-samsung/" target="_blank" rel="noopener noreferrer">Clique aqui</a><br>
+                        Código no Github: <a href="https://github.com/gustavodsv/template-samsung" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                    </div>                   
+                </div>
+
+                <div class="widget">
+                    <div class="titulo"><h2>Template - Tributo Elon Musk</h2></div>
+
+                    <div class="imagem">
+                        <a href="https://gustavodsv.github.io/tributeMusk/" target="_blank" rel="noopener noreferrer"><img src="assets/images/mais/template_tribute.png" alt=""></a>
+                    </div>
+
+                    <div class="info">
+                        Página: <a href="https://gustavodsv.github.io/tributeMusk/" target="_blank" rel="noopener noreferrer">Clique aqui</a><br>
+                        Código no Github: <a href="https://github.com/gustavodsv/tributeMusk" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                    </div>                   
+                </div>
+            </div>
         </div>
         
-    </div>
-    
+</div>
 </body>
 </html>
