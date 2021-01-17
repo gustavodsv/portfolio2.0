@@ -298,3 +298,46 @@ body{
 .oculto {
     display: none;
 }
+
+
+
+
+@media only screen and (max-width: 375px){
+
+    .container{
+        max-width: 375px;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 20px;
+        display: block;
+    }
+    .container_social{
+        width: 100%;
+        margin: auto;
+    }
+
+    .container_info{
+        max-width: 350px;
+        margin: 0px;
+    }
+    .area_sobremim{
+        width: 96%;
+        margin-top: 10px;
+    }
+    .area_menu{
+        width: 96%;
+    }
+    #projetos,
+    #mais_projetos{
+        width: 96%;
+    }
+    .widget .titulo h2{
+        font-size: 20px;
+    }
+    .widget .info{
+        font-size: 14px;
+    }
+    
+    
+}
