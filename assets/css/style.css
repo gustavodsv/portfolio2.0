@@ -8,7 +8,7 @@ body{
     background-color:#1B2431;
 }
 .container{
-    width: 1070px;
+    max-width: 1070px;
 
     display: flex;
     margin: auto;
@@ -22,6 +22,7 @@ body{
 
 /*área esquerda/social/left*/
 .container_social{
+    min-width: 300px;
     width: 300px;
     height: 545px;
 
@@ -51,7 +52,7 @@ body{
 /*area botoes*/
 .area_botoes {
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 30px;
     user-select:none;
 }
 .area_botoes ul {
@@ -300,10 +301,26 @@ body{
 }
 
 
-
-
-@media only screen and (max-width: 375px){
-
+@media only screen and (min-width: 420px) and (max-width: 800px){
+    .container{
+        max-width: 800px;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 40px;
+        display: block;
+        flex-direction: column;
+    }
+    .container_social,
+    .container_info{
+        max-width: 700px;
+        margin: auto;
+    }
+    .area_sobremim{
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width:320px){
     .container{
         max-width: 375px;
         height: auto;
@@ -311,26 +328,15 @@ body{
         margin-bottom: 0px;
         padding: 20px;
         display: block;
+        flex-direction: column;
     }
-    .container_social{
-        width: 100%;
+    .container_social,
+    .container_info{
+        width: 300px;
         margin: auto;
     }
-
-    .container_info{
-        max-width: 350px;
-        margin: 0px;
-    }
     .area_sobremim{
-        width: 96%;
         margin-top: 10px;
-    }
-    .area_menu{
-        width: 96%;
-    }
-    #projetos,
-    #mais_projetos{
-        width: 96%;
     }
     .widget .titulo h2{
         font-size: 20px;
@@ -338,6 +344,29 @@ body{
     .widget .info{
         font-size: 14px;
     }
-    
-    
+}
+@media only screen and (min-width: 320px){
+    .container{
+        max-width: 300px;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 20px 0px;
+        display: block;
+        flex-direction: column;
+    }
+    .container_social,
+    .container_info{
+        width: 300px;
+        margin: auto;
+    }
+    .area_sobremim{
+        margin-top: 10px;
+    }
+    .widget .titulo h2{
+        font-size: 20px;
+    }
+    .widget .info{
+        font-size: 14px;
+    }
 }
