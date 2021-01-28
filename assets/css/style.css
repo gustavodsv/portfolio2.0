@@ -22,7 +22,6 @@ body{
 
 /*área esquerda/social/left*/
 .container_social{
-    min-width: 300px;
     width: 300px;
     height: 545px;
 
@@ -301,72 +300,54 @@ body{
 }
 
 
-@media only screen and (min-width: 420px) and (max-width: 800px){
+@media only screen and (min-width: 700px) and (max-width: 1000px){
     .container{
-        max-width: 800px;
-        height: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 40px;
-        display: block;
+        display: flex;
         flex-direction: column;
-    }
-    .container_social,
-    .container_info{
-        max-width: 700px;
-        margin: auto;
-    }
-    .area_sobremim{
-        margin-top: 10px;
-    }
-}
-@media only screen and (min-width: 420px) and (max-width:320px){
-    .container{
-        max-width: 375px;
-        height: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        align-items: center;
+        justify-content: center;
         padding: 20px;
-        display: block;
-        flex-direction: column;
+        margin: 0;
     }
-    .container_social,
+    .container_social{
+        margin: 0px 20px;
+    }
+    
     .container_info{
-        width: 300px;
-        margin: auto;
+        max-width: 690px;
+        margin: 0;
     }
     .area_sobremim{
+        max-width: 690px;
         margin-top: 10px;
+        font-size: 17px;
     }
-    .widget .titulo h2{
-        font-size: 20px;
-    }
-    .widget .info{
-        font-size: 14px;
+    .area_menu{
+        font-size: 17px;
     }
 }
-@media only screen and (max-width: 320px){
+
+@media only screen and (max-width: 700px){
     .container{
-        max-width: 300px;
-        height: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 20px 0px;
-        display: block;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .container_social,
+    .container_social{
+        margin: 0;
+    }
+    
     .container_info{
         width: 300px;
-        margin: auto;
+        margin: 0;
     }
     .area_sobremim{
         margin-top: 10px;
     }
-    .widget .titulo h2{
-        font-size: 20px;
-    }
-    .widget .info{
-        font-size: 14px;
+    .area_menu{
+        margin-top: 15px;
     }
 }
